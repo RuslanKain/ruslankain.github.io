@@ -219,3 +219,25 @@ margin-bottom: 1cm;
         color: #000000;
       }
       
+/* Slider container */
+#slider-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.slide {
+  flex: 0 0 100%;
+  width: 100vw;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Prevent horizontal scrollbar */
+html, body {
+  overflow-x: hidden;
+}
