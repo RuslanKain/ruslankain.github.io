@@ -46,7 +46,7 @@ body {
     width: 150px; /* adjust the width as needed */
     height: 150px; /* adjust the height as needed */
     border-radius: 30%; /* creates the circular shape */
-    position: absolute; /* positions the image on the left side of the header */
+    position: fixed; /* positions the image on the left side of the header */
     left: 80px; /* adjust the left position as needed */
     top: 30px; /* adjust the top position as needed */
     }
@@ -219,25 +219,49 @@ margin-bottom: 1cm;
         color: #000000;
       }
       
-/* Slider container */
+/* Style adjustments for each slide */
+.slide {
+  background-color: rgba(0, 255, 251, 0.1); /* Light blue background for the box */
+  border-radius: 10px; /* Rounded corners for the box */
+  color: black; /* Text color */
+  padding: 20px; /* Padding inside the box */
+  margin: 20px auto; /* Vertical margin and centered horizontally */
+  width: 80%; /* Adjust width as needed, 80% for example */
+  box-sizing: border-box; /* Ensures padding is included in the width calculation */
+  text-align: justify; /* Justifies the text inside each section */
+  display: flex; /* Enables flexbox for content alignment */
+  flex-direction: column; /* Stacks flex items vertically */
+  align-items: center; /* Centers items horizontally */
+  justify-content: center; /* Centers content vertically if needed */
+}
+
+/* Additional style to ensure text paragraphs inside slides are justified */
+.slide p {
+  text-align: justify;
+  width: 100%; /* Ensures paragraph uses the full width of the slide */
+}
+
+/* Adjusting the container to ensure it centers the slides properly */
 #slider-container {
   display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-}
-
-.slide {
-  flex: 0 0 100%;
-  width: 100vw;
-  scroll-snap-align: start;
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
+  align-items: center; /* Centers the slides horizontally */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-y: auto; /* Allow vertical scrolling if necessary */
 }
 
-/* Prevent horizontal scrollbar */
+/* Ensure the body and html elements are properly styled to support full height layout */
 html, body {
-  overflow-x: hidden;
+  height: 100%; /* Full height to contain the slider vertically */
+  margin: 0; /* Remove default margin */
+  overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+/* General approach to target the testbed image */
+#experimental-setups img {
+  width: 100%; /* Adjusts the width to fill the container */
+  max-width: 600px; /* Sets a maximum width to ensure the image is not too large */
+  height: auto; /* Adjusts the height automatically to maintain aspect ratio */
+  display: block; /* Ensures the image is a block-level element */
+  margin: 0 auto; /* Centers the image within its container */
 }
