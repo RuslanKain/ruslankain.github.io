@@ -46,7 +46,7 @@ body {
     width: 150px; /* adjust the width as needed */
     height: 150px; /* adjust the height as needed */
     border-radius: 30%; /* creates the circular shape */
-    position: fixed; /* positions the image on the left side of the header */
+    position: absolute; /* positions the image on the left side of the header */
     left: 80px; /* adjust the left position as needed */
     top: 30px; /* adjust the top position as needed */
     }
@@ -163,7 +163,12 @@ margin-bottom: 1cm;
     
     /* List styling for publications section */
     ul {
-    list-style-type: none;
+    list-style-type: disc;
+    padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px; /* Adds space between each list item */
     }
 
     footer {
@@ -260,7 +265,7 @@ html, body {
 /* General approach to target the testbed image */
 #experimental-setups img {
   width: 100%; /* Adjusts the width to fill the container */
-  max-width: 600px; /* Sets a maximum width to ensure the image is not too large */
+  max-width: 400px; /* Sets a maximum width to ensure the image is not too large */
   height: auto; /* Adjusts the height automatically to maintain aspect ratio */
   display: block; /* Ensures the image is a block-level element */
   margin: 0 auto; /* Centers the image within its container */

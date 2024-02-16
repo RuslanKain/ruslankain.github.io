@@ -17,7 +17,7 @@
       <div class="about-section">
         <img src="/wp-content/themes/an-theme/images/photo.png" alt="Ruslan Kain's photo">
         <h2>About Ruslan Kain</h2>
-        <p>I'm a PhD candidate at the School of Computing, Queen's University (ON, Canada), under the co-supervision of Prof. Hossam Hassanein and Prof. Yuanzhu Chen, as part of the Telecommunications Research Lab (TRL) and Networks Lab. My research focuses on edge computing, algorithms, and optimization, with experience in entrepreneurship. I received my Master's Degree in Electrical and Computer Engineering from the American University of Beirut (Lebanon) under the supervision of Prof. Hazem Hajj in the MIND Lab.</p>
+        <p>I'm a PhD candidate at the School of Computing, Queen's University (ON, Canada), under the co-supervision of Prof. Hossam Hassanein and Prof. Yuanzhu Chen, as part of the Telecommunications Research Lab (TRL) and Networks Lab. My research focuses on edge computing, distributed computing, algorithms, optimization data science, and IoT with experience in entrepreneurship. I received my Master's Degree in Electrical and Computer Engineering from the American University of Beirut (Lebanon) under the supervision of Prof. Hazem Hajj in the MIND Lab.</p>
       </div>
     </div>
   </header>
@@ -41,18 +41,22 @@
       <div class="slide" id="data">
         <h2>Data</h2>
         <p> The dataset includes dynamic resource usage information associated with running edge-native applications on a set of four heterogeneous Raspberry Pi 4 Devices. The four Raspberry Pi 4 devices have 2, 4, and 8 GB RAM sizes, and CPU frequencies of 1200, 1500, and 1800 MHz. The resource usage measurements have a five-second granularity. We managed to collect more than 550 thousand unique data points representing the 768 hours of running applications on Raspberry Pi Devices. <a href="https://borealisdata.ca/dataset.xhtml?persistentId=doi:10.5683/SP3/GOZAJE">Dataset 1</a></p>
-        <p> Multi-Sensor Operation information for Multi-Context Recognition Scenario<a href="https://github.com/RuslanKain/optimization-multi-context-recognition/blob/main/SmarterTimeTimeslots%206-6-2019.csv">Dataset 2</a></p>
+        <p> Multi-Sensor Operation information for Multi-Context Recognition Scenario: <a href="https://github.com/RuslanKain/optimization-multi-context-recognition/blob/main/SmarterTimeTimeslots%206-6-2019.csv">Borealis Dataset</a></p>
       </div>
       <div class="slide" id="codebase">
         <h2>Codebase</h2>
-        <p> Contains script for resource usage data generation on dynamically accessed Raspberry Pis used in DRUDGE. Analysis of the data and multi-step multi-variate prediction methods used in RUMP. <a href="https://github.com/RuslanKain/rump-ec">rump-ec</a></p>
+        <p> Contains script for resource usage data generation on dynamically accessed Raspberry Pis used in DRUDGE. Analysis of the data and multi-step multi-variate prediction methods used in RUMP:  <a href="https://github.com/RuslanKain/rump-ec">rump-ec</a></p>
       </div>
       <div class="slide" id="experimental-setups">
         <h2>Experimental Setups</h2>
-        <p>Description of Master's Thesis Setup.</p>
-        <p>Description of PhD Thesis Setup.</p>
-        <!-- Assuming the picture is added here -->
+
         <img src="/wp-content/themes/an-theme/images/setup-image.jpg" alt="PhD Thesis Setup">
+
+        <p>DRUDGE, a Python-based tool, is designed to simulate the dynamic usage behavior of Extreme Edge Devices (EEDs), also known as workers, in a controlled, repeatable manner. This tool supports a wide variety of applications and allows for the customization of application run times, CPU frequencies, and network conditions to generate diverse datasets covering various usage scenarios. It employs Raspberry Pi (RPi) 4B model devices with different RAM sizes and CPU frequencies, modified through overclocking and throttling to increase heterogeneity. 
+          Applications such as video gaming (Doom), video streaming (YouTube), augmented reality simulations, and Duino-coin mining are run on these devices to emulate dynamic resource usage. DRUDGE enables users to input parameters like monitoring interval, CPU frequency, and dataset name/type, creating state time lengths for application runs based on these inputs. Tailored specifically for Extreme Edge Computing (EEC) applications, the tool collects data over multiple 48-hour periods with 5-second monitoring intervals, recording resource usage with the psutil Python library and adapting to different network conditions to reflect real-world IoT scenarios.</p>
+        
+        
+        
       </div>
     </div>
   </main>
@@ -74,7 +78,7 @@
           <li><a href="https://github.com/RuslanKain/">Github</a></li>
           <li><a href="https://www.linkedin.com/in/ruslan-kain-3527aa130/?originalSubdomain=ca">LinkedIn</a></li>
           <li><a href="https://scholar.google.ca/citations?user=prqcEmEAAAAJ&hl=en">Google Scholar</a></li>
-          <li><a href="https://www.researchgate.net/profile/Ruslan-Kain">Research Gate</a></li>
+          <li><a href="https://www.researchgate.net/profile/Ruslan-Kain">ResearchGate</a></li>
         </ul>
       </div>
     </div>
