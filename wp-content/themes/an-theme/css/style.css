@@ -46,7 +46,7 @@ body {
     width: 150px; /* adjust the width as needed */
     height: 150px; /* adjust the height as needed */
     border-radius: 30%; /* creates the circular shape */
-    position: absolute; /* positions the image on the left side of the header */
+    position: static; /* positions the image on the left side of the header */
     left: 80px; /* adjust the left position as needed */
     top: 30px; /* adjust the top position as needed */
     }
