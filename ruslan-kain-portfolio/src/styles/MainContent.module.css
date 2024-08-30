@@ -1,0 +1,44 @@
+main {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f8f9fa; /* light grey background for a subtle look */
+  color: #333; /* dark grey text for contrast */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* subtle shadow for depth */
+  border-radius: 8px; /* rounded corners */
+  max-width: 1200px; /* maximum width */
+  margin: 20px auto; /* centered with vertical spacing */
+  transition: background-color 0.3s, color 0.3s; /* smooth transition for theme changes */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  main {
+    padding: 20px;
+    flex-direction: column;
+  }
+}
+
+/* Hover effects for all clickable elements within main */
+main a:hover {
+  color: #0056b3; /* change link color on hover */
+  text-decoration: underline; /* underline for clarity */
+}
+
+/* General paragraph styling within main */
+main p {
+  line-height: 1.6;
+  margin-bottom: 15px; /* space between paragraphs */
+}
+
+/* Enhancements for lists within main */
+main ul {
+  padding-left: 20px; /* indent lists slightly */
+}
+
+main li {
+  margin-bottom: 10px; /* space between list items */
+}
+
